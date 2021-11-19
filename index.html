@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-bottom: 2rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>calc</h1>
+      <div class="toggle-container">
+        <p>THEME</p> 
+      <div class="toggle-wrapper">
+        <input type="radio" name="toggle-theme" id="theme1" checked class="toggle-radio">
+        <input type="radio" name="toggle-theme" id="theme2" class="toggle-radio">
+        <input type="radio" name="toggle-theme" id="theme3" class="toggle-radio">
+        <label for="theme1" class="toggle-label"><span>1</span></label>
+        <label for="theme2" class="toggle-label"><span>2</span></label>
+        <label for="theme3" class="toggle-label"><span>3</span></label>
+        <div class="toggle-slider"></div>
+
+      </div>
+    </div>
+
+    </div>
+    <label for="display-input">Screen I/O</label>
+    <input type="text" id="display-input" value="0">
+    <div id="display-second"></div>
+    <div id="display-container">
+      <span id="display"></span>
+    </div>
+
+    <div class="keypad">
+      <button class="btn btn-num">7</button>
+      <button class="btn btn-num">8</button>
+      <button class="btn btn-num">9</button>
+      <button class="btn" id="btn-del">DEL</button>
+
+      <button class="btn btn-num">4</button>
+      <button class="btn btn-num">5</button>
+      <button class="btn btn-num">6</button>
+      <button class="btn btn-symb"> + </button>
+
+      <button class="btn btn-num">1</button>
+      <button class="btn btn-num">2</button>
+      <button class="btn btn-num">3</button>
+      <button class="btn btn-symb"> - </button>
+
+      <button class="btn btn-symb">.</button>
+      <button class="btn btn-num">0</button>
+      <button class="btn btn-symb"> / </button>
+      <button class="btn btn-symb"> * </button>
+
+      <button class="btn" id="btn-reset">RESET</button>
+      <button class="btn" id="calculate">=</button>
+
+    </div>
+    
+  </div>
+
+
+  <script src="app.js"></script>
+  <div class="attribution">
+    Coded by <a href="https://twitter.com/iamzaidakbar">Zaid</a>.
+  </div>
+</body>
+</html>
