@@ -61,7 +61,7 @@ btnDel.addEventListener('click', (e) => {
 btnCalculate.addEventListener('click', (e) => {
     historyDisplay.innerText = `${mainDisplay.innerText} = ${eval(mainDisplay.innerText)}`;
     const value = eval(mainDisplay.innerText);
-    mainDisplay.innerText = '0';
+    mainDisplay.innerText = '';
 })
 
 // --------THEME TOGGLER------------------//
