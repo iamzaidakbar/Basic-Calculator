@@ -29,13 +29,13 @@ for (btns of btnSymbols) {
 
         const value = mainDisplay.innerText += e.target.innerText;
 
-        // function checkIfDuplicateExists(value) {
-        //     return new Set(value).size !== value.length
-        // }
-        // if(checkIfDuplicateExists(value) === true){
-        //     console.log('true');
-        //     mainDisplay.innerText = mainDisplay.innerText.substr(0, mainDisplay.innerText.length - 1)
-        // }
+        function checkIfDuplicateExists(value) {
+            return new Set(value).size !== value.length
+        }
+        if(checkIfDuplicateExists(value) === true){
+            console.log('true');
+            mainDisplay.innerText = mainDisplay.innerText.substr(0, mainDisplay.innerText.length - 1)
+        }
 
     });
 }
